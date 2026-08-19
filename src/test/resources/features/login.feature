@@ -16,13 +16,13 @@ Característica: Inicio de sesión en CiberBank
   Escenario: Ingreso con contraseña incorrecta
     Dado que Jaime está en la pantalla de login
     Cuando ingresa el usuario "jaime" y la contraseña "malaClave"
-    Entonces debería ver el mensaje de error "Credenciales inválidas"
+    Entonces debería ver el mensaje de error de autenticación "Credenciales inválidas"
 
   @login
   Esquema del escenario: Ingresos rechazados
     Dado que Jaime está en la pantalla de login
     Cuando ingresa el usuario "<usuario>" y la contraseña "<clave>"
-    Entonces debería ver el mensaje de error "<mensaje>"
+    Entonces debería ver el mensaje de error de autenticación "<mensaje>"
 
     Ejemplos:
       | usuario   | clave       | mensaje                                |

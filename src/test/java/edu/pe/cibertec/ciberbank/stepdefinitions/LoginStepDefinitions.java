@@ -59,7 +59,7 @@ public class LoginStepDefinitions {
         );
     }
 
-    @Entonces("debería ver el mensaje de error {string}")
+    @Entonces("debería ver el mensaje de error de autenticación {string}")
     public void deberia_ver_el_mensaje_de_error(String mensaje) {
         theActorInTheSpotlight().should(
                 seeThat("el mensaje de error del login", TextoDe.el(LoginScreen.ERROR_LOGIN), is(mensaje))
